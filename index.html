@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Datefier</title>
 
     <!-- JQueryUI core CSS -->
-    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,69 +20,123 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
-
+<body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Datefier</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          
-        </div><!--/.navbar-collapse -->
-      </div>
+    	<div class="container">
+        	<div class="navbar-header">
+        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		        </button>
+		        <a class="navbar-brand" href="#">Datefier</a>
+		    </div>
+	        <div class="navbar-collapse collapse">
+        		<ul class="nav navbar-nav navbar-right">
+		            <li><a href="#basic-usage">Basic usage</a></li>
+		          	<li><a href="#classes">Other options</a></li>
+		        </ul>
+        	</div><!--/.navbar-collapse -->
+      	</div>
     </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      <div class="container">
-        <h1>Datefier</h1>
-        <p>A simple plugin to create datepickers in few simple steps</p>
-      </div>
+      	<div class="container">
+        	<h1>Datefier</h1>
+        	<p>A simple plugin to create datepickers in few simple steps</p>
+      	</div>
     </div>
 
     <div class="container">
-    	<article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
-			<a name="user-content-datefier" class="anchor" href="#datefier"><span class="octicon octicon-link"></span></a>datefier</h1>
-
-			<p>Transform your input fields in a datepicker in a few simple steps.</p>
-
-			<h2>
-			<a name="user-content-basic-usage" class="anchor" href="#basic-usage"><span class="octicon octicon-link"></span></a>Basic Usage</h2>
-
-			<p>Import jQuery and jQueryUI</p>
-
-			<div class="highlight highlight-html"><pre> <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css"</span> <span class="nt">/&gt;</span>
-			 <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-			 <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-			</pre></div>
-
-			<p>Create an input field and give the <code>datepicker</code> class</p>
-
-			<div class="highlight highlight-html"><pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"datepicker"</span> <span class="nt">/&gt;</span>
-			</pre></div>
-		</article> 
-    	<hr>
-
-      <footer>
-        <p></p>
-      </footer>
+    	<section id="basic-usage">
+    		<h2>Basic Usage</h2>
+    		<p>
+    			Import JQuery and JQueryUI:<br/>
+    			<pre>&lt;rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" /&gt;<br/>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"&gt;&lt;/script&gt;<br/>&lt;script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"&gt;&lt;/script&gt;</pre>
+    		</p>
+    		<p>
+    			Import datefier.js
+    			<pre>&lt;script src="path-to/datefier.js"&gt;&lt;/script&gt;</pre>
+    		</p>
+    		<p>
+    			Create an input field and give the <code>datepicker</code> class
+    			<pre>&lt;input type="text" class="datepicker" /&gt;</pre>
+    			<h5>Result:</h5>
+    			<div class="row">
+	    			<div class="col-sm-4">
+	    				<input type="text" class="form-control datepicker" />
+	    			</div>
+	    		</div>
+    			<small>click in the field</small>
+    		</p>
+    	</section>
+    	<section id="classes">
+	    	<h2>Other options</h2>
+	    	<h3 style="display:inline-block">From - To</h3> - <small>Simply create a range from first date to last date</small>
+			<pre>&lt;input type="text" class="datepicker from" /&gt;<br/>&lt;input type="text" class="datepicker to" /&gt;</pre>
+			<h5>Result:</h5>
+			<div class="row">
+				<div class="col-sm-4">
+					<input type="text" class="form-control datepicker from" />
+				</div>
+				<div class="col-sm-4">
+					<input type="text" class="form-control datepicker to" />
+				</div>
+			</div>
+    		<h3 style="display:inline-block">Greater then today</h3> - <small>You can select only a date greater than today</small>
+    		<pre>&lt;input type="text" class="datepicker gt-today" /&gt;</pre>
+    		or
+    		<pre>&lt;input type="text" class="datepicker gte-today" /&gt;</pre>
+    		<h5>Result:</h5>
+    		<div class="row">
+    			<div class="col-sm-4">
+    				<input type="text" class="form-control datepicker gt-today" />
+    			</div>
+    		</div>
+    		or
+    		<div class="row">
+    			<div class="col-sm-4">
+    				<input type="text" class="form-control datepicker gte-today" />
+    			</div>
+    		</div>
+    		<h3 style="display:inline-block">Lower then today</h3> - <small>You can select only a date lower than today</small>
+    		<pre>&lt;input type="text" class="datepicker lt-today" /&gt;</pre>
+    		or
+    		<pre>&lt;input type="text" class="datepicker lte-today" /&gt;</pre>
+    		<h5>Result:</h5>
+    		<div class="row">
+    			<div class="col-sm-4">
+    				<input type="text" class="form-control datepicker lw-today" />
+    			</div>
+    		</div>
+    		or
+    		<div class="row">
+    			<div class="col-sm-4">
+    				<input type="text" class="form-control datepicker lwe-today" />
+    			</div>
+    		</div>
+    	</section>
     </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
+    <footer style="background-color:#ecf0f1;margin-bottom:-10px">
+    	<div style="text-align:center;padding:10px">
+    		<p>Datefier 1.0 · Created by Gypsy Codex <br/> <a href="https://github.com/GypsyCodex" target="_blank">https://github.com/GypsyCodex</a></p>
+    		<p>
+    			Gypsy Codex are:<br/>
+    			Davide Pastore - <a href="https://github.com/DavidePastore" target="_blank">https://github.com/DavidePastore</a><br/>
+    			Giuseppe Ciullo - <a href="https://github.com/JBassx" target="_blank">https://github.com/JBassx</a><br/>
+    		</p>
+    	</div>
+  	</footer>
+   	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-  </body>
+    <script src="datefier.min.js"></script>
+</body>
 </html>
