@@ -2,7 +2,7 @@ datefier
 ===============
 Transform your input fields in a datepicker in a few simple steps.
 
-##Basic Usage
+## Basic Usage
 
 Import jQuery and jQueryUI
 ```html
@@ -17,28 +17,28 @@ Create an input field and give it the ``` datepicker ``` class
 <input type="text" class="datepicker" />
 ```
 
-###Set a date range:
+### Set a date range:
 ```html
 <input type="text" class="datepicker from" />
 <input type="text" class="datepicker to" />
 ```
 
-###Start from today:
+### Start from today:
 ```html
 <input type="text" class="datepicker gte-today" />
 ```
 
-###Start from tomorrow:
+### Start from tomorrow:
 ```html
 <input type="text" class="datepicker gt-today" />
 ```
 
-###Stop today:
+### Stop today:
 ```html
 <input type="text" class="datepicker lte-today" />
 ```
 
-###Stop yesterday:
+### Stop yesterday:
 ```html
 <input type="text" class="datepicker lt-today" />
 ```
